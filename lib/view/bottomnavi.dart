@@ -1,34 +1,33 @@
-
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:home_rent/utils/color.dart';
 import 'package:home_rent/view/accont.dart';
 import 'package:home_rent/view/home.dart';
-import 'package:home_rent/view/inbox.dart';
+import 'package:home_rent/view/reservations.dart';
 import 'package:home_rent/view/saved.dart';
 
+// ignore: must_be_immutable
 class BottomNavi extends StatefulWidget {
-  const BottomNavi({Key? key}) : super(key: key);
+  int selectedIndex = 0;
+  BottomNavi({super.key, this.selectedIndex = 0});
   @override
   State<BottomNavi> createState() => _BottomNaviState();
 }
+
 class _BottomNaviState extends State<BottomNavi> {
-  int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-  TextStyle(fontSize: 30, fontWeight: FontWeight.w600);
-  static const List<Widget> _widgetOptions = <Widget>[
-    HomePage(),
-    Saved(),
-    Inbox(),
-    Profile(),
+  static final List<Widget> _widgetOptions = <Widget>[
+    const HomePage(),
+    const Saved(),
+    const MyReservationsPage(),
+    const Profile(),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
+        child: _widgetOptions.elementAt(widget.selectedIndex),
       ),
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
@@ -48,7 +47,7 @@ class _BottomNaviState extends State<BottomNavi> {
               hoverColor: Colors.blue[100]!,
               gap: 8,
               tabBorderRadius: 15,
-              activeColor:AppColors.primaryColor,
+              activeColor: AppColors.primaryColor,
               iconSize: 23,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               duration: const Duration(milliseconds: 400),
@@ -59,24 +58,23 @@ class _BottomNaviState extends State<BottomNavi> {
                   icon: Icons.home_outlined,
                   text: 'Home',
                 ),
-                 GButton(
-                  icon: FontAwesomeIcons.heart,
-                  text: 'Likes',
+                GButton(
+                  icon: FontAwesomeIcons.star,
+                  text: 'Favourites',
                 ),
                 GButton(
-
-                  text: 'Search',
-                  icon: FontAwesomeIcons.message,
+                  text: 'Reservations',
+                  icon: FontAwesomeIcons.ticketAlt,
                 ),
                 GButton(
                   icon: FontAwesomeIcons.user,
                   text: 'Profile',
                 ),
               ],
-              selectedIndex: _selectedIndex,
+              selectedIndex: widget.selectedIndex,
               onTabChange: (index) {
                 setState(() {
-                  _selectedIndex = index;
+                  widget.selectedIndex = index;
                 });
               },
             ),

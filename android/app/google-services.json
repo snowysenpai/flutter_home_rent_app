@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "986178139913",
-    "project_id": "finalyearpoject-e532b",
-    "storage_bucket": "finalyearpoject-e532b.appspot.com"
+    "project_number": "1084219576679",
+    "project_id": "rent-home-app",
+    "storage_bucket": "rent-home-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:986178139913:android:7b6d94eddd6224bcd005d8",
+        "mobilesdk_app_id": "1:1084219576679:android:3b8c9c422bc45c66de9fc2",
         "android_client_info": {
           "package_name": "com.example.home_rent"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "986178139913-7dpf6j7i0dsoqgkmoom7cv4juebv4ovb.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBSuwo0ftKgVj7oLCzKOa-EV3tKjcg5jL4"
+          "current_key": "AIzaSyB8WSdIrpAzQnt5H9WB7u-Apyr18M4AZWQ"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "986178139913-7dpf6j7i0dsoqgkmoom7cv4juebv4ovb.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

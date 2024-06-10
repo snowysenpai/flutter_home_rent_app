@@ -7,13 +7,13 @@ class ExploreCard extends StatelessWidget {
   final String title, loc, bed, path;
   final bool isHeart;
   const ExploreCard({
-    Key? key,
+    super.key,
     required this.bed,
     required this.title,
     required this.loc,
     required this.path,
     required this.isHeart,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -68,7 +68,7 @@ class ExploreCard extends StatelessWidget {
               title,
               style: Theme.of(context)
                   .textTheme
-                  .headline5!
+                  .headlineLarge!
                   .copyWith(fontWeight: FontWeight.w600, fontSize: 18),
             ),
             Gap(isWidth: false, isHeight: true, height: height * 0.01),
@@ -94,7 +94,7 @@ class ExploreCard extends StatelessWidget {
                       bed,
                       style: Theme.of(context)
                           .textTheme
-                          .headline2!
+                          .headlineMedium!
                           .copyWith(fontSize: 12),
                     )
                   ],

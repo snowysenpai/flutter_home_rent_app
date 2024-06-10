@@ -6,11 +6,10 @@ class RowTitleHome extends StatelessWidget {
   final String title, subtitle;
 
   const RowTitleHome(
-      {Key? key,
+      {super.key,
       required this.title,
       required this.subtitle,
-      required this.onPress})
-      : super(key: key);
+      required this.onPress});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +19,7 @@ class RowTitleHome extends StatelessWidget {
       children: [
         Text(
           title,
-          style: Theme.of(context).textTheme.headline1!.copyWith(
+          style: Theme.of(context).textTheme.headlineSmall!.copyWith(
               fontWeight: FontWeight.w700,
               fontSize: 20,
               color: Colors.black),
@@ -31,7 +30,7 @@ class RowTitleHome extends StatelessWidget {
             subtitle,
             style: Theme.of(context)
                 .textTheme
-                .headline1!
+                .headlineSmall!
                 .copyWith(color: AppColors.textPrimary, fontSize: 14),
           ),
         ),

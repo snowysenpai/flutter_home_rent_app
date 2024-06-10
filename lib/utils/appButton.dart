@@ -14,7 +14,7 @@ class AppButton extends StatelessWidget {
   final Widget child;
 
   const AppButton(
-      {Key? key,
+      {super.key,
         this.width = double.infinity,
         this.height = 50,
         this.radius = 30,
@@ -31,8 +31,7 @@ class AppButton extends StatelessWidget {
         required this.onPress,
         this.bgColor = AppColors.primaryColor,
         this.textColor = AppColors.primaryTextTextColor,
-        this.title = "default"})
-      : super(key: key);
+        this.title = "default"});
 
   @override
   Widget build(BuildContext context) {
@@ -41,11 +40,11 @@ class AppButton extends StatelessWidget {
         child: iconBtn
             ? Container(
           decoration: BoxDecoration(
-              color: Color(0xffF5F4F8),
+              color: const Color(0xffF5F4F8),
               borderRadius: BorderRadius.circular(15)),
-          child: child,
           width: MediaQuery.of(context).size.width / 2.28,
           height: MediaQuery.of(context).size.height / 11,
+          child: child,
         )
             : Padding(
           padding:

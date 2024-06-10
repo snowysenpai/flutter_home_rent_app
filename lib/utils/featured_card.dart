@@ -6,7 +6,7 @@ class FeaturedCard extends StatelessWidget {
       // payment
   ;
   const FeaturedCard(
-      {Key? key,
+      {super.key,
       required this.path,
       required this.category,
       required this.title,
@@ -19,7 +19,6 @@ class FeaturedCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height * 1;
     final width = MediaQuery.of(context).size.width * 1;
-    Locale locale = Localizations.localeOf(context);
     return Container(
       height: height / 4,
       width: width / 1.35,
@@ -51,7 +50,7 @@ class FeaturedCard extends StatelessWidget {
                         category,
                         style: Theme.of(context)
                             .textTheme
-                            .subtitle1!
+                            .titleMedium!
                             .copyWith(color: AppColors.whiteColor),
                       ),
                     ),
@@ -65,7 +64,7 @@ class FeaturedCard extends StatelessWidget {
                 title,
                 style: Theme.of(context)
                     .textTheme
-                    .headline2!
+                    .headlineLarge!
                     .copyWith(fontSize: 16, fontWeight: FontWeight.bold),
               ),
               Gap(isWidth: false, isHeight: true, height: height * 0.01),
@@ -89,7 +88,7 @@ class FeaturedCard extends StatelessWidget {
                     location,
                     style: Theme.of(context)
                         .textTheme
-                        .headline2!
+                        .headlineLarge!
                         .copyWith(fontSize: 12),
                   )
                 ],

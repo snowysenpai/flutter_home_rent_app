@@ -11,44 +11,44 @@ final appTheme = ThemeData(
             fontSize: 22,
             color: AppColors.primaryColor)),
     textTheme: const TextTheme(
-      headline1: TextStyle(
+      displaySmall: TextStyle(
           fontSize: 40,
           color: AppColors.primaryTextTextColor,
           fontWeight: FontWeight.w500,
           height: 1.6),
-      headline2: TextStyle(
+      headlineLarge: TextStyle(
           fontSize: 32,
           color: AppColors.textPrimary,
           fontWeight: FontWeight.w500,
           height: 1.6),
-      headline3: TextStyle(
+      headlineMedium: TextStyle(
           fontSize: 28,
           color: AppColors.textPrimary,
           fontWeight: FontWeight.w500,
           height: 1.6),
-      headline4: TextStyle(
+      headlineSmall: TextStyle(
           fontSize: 24,
           color: AppColors.textPrimary,
           fontWeight: FontWeight.w500,
           height: 1.6),
-      headline5: TextStyle(
+      titleLarge: TextStyle(
           fontSize: 20,
           color: AppColors.textPrimary,
           fontWeight: FontWeight.w500,
           height: 1.6),
-      headline6: TextStyle(
+      titleMedium: TextStyle(
           fontSize: 17,
           color: AppColors.textPrimary,
           height: 1.6),
-      bodyText1: TextStyle(
+      bodyLarge: TextStyle(
           fontSize: 17,
           color: AppColors.textPrimary,
           height: 1.6),
-      bodyText2: TextStyle(
+      bodyMedium: TextStyle(
           fontSize: 14,
           color: AppColors.textPrimary,
           height: 1.6),
-      caption: TextStyle(
+      bodySmall: TextStyle(
           fontSize: 12,
           color: AppColors.textPrimary,
           height: 2.26),

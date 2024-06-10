@@ -1,5 +1,6 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:home_rent/src/common/color.dart';
+import 'package:home_rent/utils/color.dart';
 
 class AppInput extends StatefulWidget {
   final TextEditingController myController;
@@ -14,7 +15,7 @@ class AppInput extends StatefulWidget {
       otherColor;
   final Icon icon;
   const AppInput(
-      {Key? key,
+      {super.key,
         required this.myController,
         required this.focusNode,
         required this.obscureText,
@@ -25,8 +26,7 @@ class AppInput extends StatefulWidget {
         this.rightIcon = false,
         this.otherColor = false,
         this.enable = true,
-        this.autoFocus = false})
-      : super(key: key);
+        this.autoFocus = false});
 
   @override
   State<AppInput> createState() => _AppInputState();
@@ -35,7 +35,9 @@ class AppInput extends StatefulWidget {
 class _AppInputState extends State<AppInput> {
   late bool passwordShow;
 
+  @override
   void initState() {
+    super.initState();
     passwordShow = widget.obscureText;
   }
 
@@ -67,7 +69,7 @@ class _AppInputState extends State<AppInput> {
                 : const Icon(Icons.visibility_off))
             : null,
         // contentPadding: const EdgeInsets.all(10),
-        border:  OutlineInputBorder(
+        border:  const OutlineInputBorder(
             borderSide: BorderSide(color: AppColors.whiteColor),
             borderRadius: BorderRadius.all(Radius.circular(8))),
         focusedBorder: const OutlineInputBorder(
