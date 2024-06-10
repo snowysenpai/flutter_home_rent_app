@@ -1,16 +1,7 @@
-# home_rent
+# Home Rent App
 
-A new Flutter project.
+
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Added some features, like renting home date etc, if you want to try this app you have to use the firebase connection. Right now it uses my test firebase firestore, so it will be read only in the future, i will drop some screenshots later so you can check and try with your firestore account. There is still some bugs appearing sometimes.
