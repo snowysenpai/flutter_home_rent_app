@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "1084219576679",
-    "project_id": "rent-home-app",
-    "storage_bucket": "rent-home-app.appspot.com"
+    "project_number": "103327781692",
+    "project_id": "rent-home-e2191",
+    "storage_bucket": "rent-home-e2191.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1084219576679:android:3b8c9c422bc45c66de9fc2",
+        "mobilesdk_app_id": "1:103327781692:android:707a8fd5669d2e8d85c439",
         "android_client_info": {
           "package_name": "com.example.home_rent"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB8WSdIrpAzQnt5H9WB7u-Apyr18M4AZWQ"
+          "current_key": "AIzaSyBBPyT-OmV6KT8oxIB2bYke1C_HMdaglUc"
         }
       ],
       "services": {

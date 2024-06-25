@@ -53,10 +53,10 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB8WSdIrpAzQnt5H9WB7u-Apyr18M4AZWQ',
-    appId: '1:1084219576679:android:3b8c9c422bc45c66de9fc2',
-    messagingSenderId: '1084219576679',
-    projectId: 'rent-home-app',
-    storageBucket: 'rent-home-app.appspot.com',
+    apiKey: 'AIzaSyBBPyT-OmV6KT8oxIB2bYke1C_HMdaglUc',
+    appId: '1:103327781692:android:707a8fd5669d2e8d85c439',
+    messagingSenderId: '103327781692',
+    projectId: 'rent-home-e2191',
+    storageBucket: 'rent-home-e2191.appspot.com',
   );
 }
